@@ -1,0 +1,18 @@
+
+State Machine - |top_level|fsm_principal_lcd:fsm_principal_inst|estado_principal
+Name estado_principal.S_ENVIAR_DIGITO_DEZENA estado_principal.S_ENVIAR_COMANDO_POSICAO estado_principal.S_ESPERAR_ATUALIZACAO estado_principal.S_INICIALIZAR_LCD_4 estado_principal.S_INICIALIZAR_LCD_3 estado_principal.S_INICIALIZAR_LCD_2 estado_principal.S_INICIALIZAR_LCD_1 estado_principal.S_INICIALIZAR_LCD_0 estado_principal.S_ENVIAR_DIGITO_UNIDADE 
+estado_principal.S_INICIALIZAR_LCD_0 0 0 0 0 0 0 0 0 0 
+estado_principal.S_INICIALIZAR_LCD_1 0 0 0 0 0 0 1 1 0 
+estado_principal.S_INICIALIZAR_LCD_2 0 0 0 0 0 1 0 1 0 
+estado_principal.S_INICIALIZAR_LCD_3 0 0 0 0 1 0 0 1 0 
+estado_principal.S_INICIALIZAR_LCD_4 0 0 0 1 0 0 0 1 0 
+estado_principal.S_ESPERAR_ATUALIZACAO 0 0 1 0 0 0 0 1 0 
+estado_principal.S_ENVIAR_COMANDO_POSICAO 0 1 0 0 0 0 0 1 0 
+estado_principal.S_ENVIAR_DIGITO_DEZENA 1 0 0 0 0 0 0 1 0 
+estado_principal.S_ENVIAR_DIGITO_UNIDADE 0 0 0 0 0 0 0 1 1 
+
+State Machine - |top_level|fsm_principal_lcd:fsm_principal_inst|driver_lcd:driver_lcd|estado_driver
+Name estado_driver.IDLE estado_driver.PULSO_WAIT estado_driver.PULSO_WRITE 
+estado_driver.IDLE 0 0 0 
+estado_driver.PULSO_WRITE 1 0 1 
+estado_driver.PULSO_WAIT 1 1 0 

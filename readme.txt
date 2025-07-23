@@ -18,4 +18,6 @@ ATENÇÃO: reset é utilizado como entrada, um pino deve ser escolhido para ele.
 iniciais quando number == 99, ele só irá resetar quando o botão ou o switch for acionado, é considerado uma boa pratica.
 
 Você pode conferir todas as entradas e saídas no top_level.
+Abra o arquivo .qpf diretamente no quartus.
+
 
